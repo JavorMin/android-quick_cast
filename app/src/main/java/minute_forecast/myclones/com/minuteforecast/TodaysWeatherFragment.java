@@ -113,6 +113,7 @@ public class TodaysWeatherFragment extends Fragment {
                 @Override
                 public void onSuccess(CurrentWeather data) {
                     updateCurrentWeather(data);
+                    binding.swiperefresh.setRefreshing(false);
                 }
 
                 @Override
